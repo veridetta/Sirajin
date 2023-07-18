@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Sirajin</string>
+    <string name="select_city_prompt">Pilih Kota / Kota Domisili</string>
+    <string name="select_satuan">Pilih Satuan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="satuan_array">
+        <item>Pcs</item>
+        <item>Kg</item>
+        <item>Liter</item>
+        <item>Meter</item>
+        <item>Box</item>
+    </string-array>
+    <string-array name="tugas_array">
+        <item>Mat</item>
+        <item>Kim</item>
+        <item>Fis</item>
+        <item>Bio</item>
+    </string-array>
+    <string-array name="output_array">
+        <item>Mat</item>
+        <item>Kim</item>
+        <item>Fis</item>
+        <item>Bio</item>
+    </string-array>
+</resources>

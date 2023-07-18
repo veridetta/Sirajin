@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Foto Profil (gambarnya fixed) -->
+            <ImageView
+                android:id="@id/profileImageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile_image" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#888888"
+                    android:background="@drawable/background_border_gradient"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_12sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#888888"
+                    android:background="@drawable/background_border_gradient"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Tombol Simpan -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveButton"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Simpan"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/orange"
+                android:layout_marginBottom="@dimen/_10sdp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logoutButton"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Logout"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/red"
+                android:layout_marginBottom="@dimen/_50sdp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

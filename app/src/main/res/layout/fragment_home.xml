@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Card Informasi Judul -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_18sdp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_background_d"
+                    android:padding="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Informasi Laporan Kesehatan"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"/>
+                    <ImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/belum_isi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belum Mengisi"
+                        android:textSize="@dimen/_27sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laporan Kondisi Kesehatan"
+                        android:textSize="@dimen/_16sdp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jawablah pertanyaan berikut"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/darkBlue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Berdasarkan kondisi saudara hari ini :"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/darkBlue"/>
+            <!-- Card Absen -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.veeyaar.supergradienttextview.GradientTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apakah Anda Sehat Hari Ini?"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+                        app:isVertical="true"
+                        app:startColor="#D78C87"
+                        app:endColor="#5DCBC2"
+                        android:textColor="@color/darkBlue"/>
+
+                    <RadioGroup
+                        android:id="@+id/sehatRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/yaRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ya" />
+
+                        <RadioButton
+                            android:id="@+id/tidakRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.veeyaar.supergradienttextview.GradientTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jika tidak, apa yang anda rasakan"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    app:isVertical="true"
+                    app:startColor="#D78C87"
+                    app:endColor="#5DCBC2"
+                    android:textColor="@color/darkBlue"/>
+                <!-- Edit Text Rasakan -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tuliskan disini"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:background="@drawable/background_border_gradient">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rasakanEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#888888"
+                        android:background="@drawable/background_border_gradient"
+                        android:minLines="3"
+                        android:minHeight="@dimen/_80sdp"
+                        android:inputType="textMultiLine"  />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <!-- Card Berobat -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:radius="16dp"
+                android:layout_marginBottom="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.veeyaar.supergradienttextview.GradientTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apakah Anda Akan Berobat Hari Ini?"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+                        app:isVertical="true"
+                        app:startColor="#D78C87"
+                        app:endColor="#5DCBC2"
+                        android:textColor="@color/darkBlue"/>
+
+
+                    <RadioGroup
+                        android:id="@+id/berobatRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/yaBerobatRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ya" />
+
+                        <RadioButton
+                            android:id="@+id/tidakBerobatRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tidak" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Tombol Lanjut -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lanjutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Lanjut"
+                android:textColor="#FFFFFF"
+                android:paddingRight="@dimen/_35sdp"
+                android:paddingLeft="@dimen/_35sdp"
+                android:background="@drawable/button_background_gradient_d"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

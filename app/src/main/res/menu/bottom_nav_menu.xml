@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_catatan"
+        android:icon="@drawable/ic_catatan"
+        android:title="Catatan Harian" />
+    <item
+        android:id="@+id/menu_pengumuman"
+        android:icon="@drawable/ic_pengumuman"
+        android:title="Pengumuman" />
+    <item
+        android:id="@+id/menu_profil"
+        android:icon="@drawable/ic_profil"
+        android:title="Profil" />
+</menu>

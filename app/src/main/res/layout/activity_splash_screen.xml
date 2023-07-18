@@ -1,0 +1,88 @@
+<!-- splash_screen.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sdp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PORTAL CEP CCIT"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_below="@id/logoImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Sign On (SSO) System"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_4sdp" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/white"
+        android:layout_below="@id/subtitleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+
+    <TextView
+        android:id="@+id/sirajinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sirajin"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/blue"
+        android:background="@drawable/rounded_background"
+        android:paddingLeft="@dimen/_17sdp"
+        android:paddingRight="@dimen/_17sdp"
+        android:layout_below="@id/appNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/sirajinTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp" />
+
+
+    <include
+        android:id="@+id/footerLayout"
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="@dimen/_8sdp" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1093626332884",
+    "project_id": "sirajin-9a409",
+    "storage_bucket": "sirajin-9a409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093626332884:android:b57b064d4dd1f8566cdd41",
+        "android_client_info": {
+          "package_name": "com.example.sirajin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093626332884-5mq20omn6hvs2uis1pr794shq522uuet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3WfsYH5wHLkE48qsc7EHVbw_QpjO7BFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093626332884-5mq20omn6hvs2uis1pr794shq522uuet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
